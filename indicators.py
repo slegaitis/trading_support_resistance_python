@@ -3,9 +3,15 @@ import pandas_ta as pdta
 import numpy as np
 from finta import TA
 from sklearn.cluster import KMeans
-from constants import Trend
 from helpers.class_helpers import Helpers
 from scipy.signal import argrelextrema
+
+class Trend:
+    Extreme_Bullish = 3
+    Bullish = 1
+    Bearish = -1
+    Sideways = 0
+    Neutral = 2
 
 class BotIndicators():
     def __init__(self, bot_obj):
