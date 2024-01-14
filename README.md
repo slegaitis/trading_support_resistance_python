@@ -1,5 +1,7 @@
 # Python Get support and resistance levels
 
+## Contributions welcome
+
 This code defines a class method determine_support_resistance and two static methods check_price_at_support_resistance and find_next_support_resistance. The purpose of these methods is to identify support and resistance levels in financial time series data and provide signals based on the current market price.
 
 ## Here's a breakdown of each method:
