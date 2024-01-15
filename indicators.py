@@ -3,7 +3,6 @@ import pandas_ta as pdta
 import numpy as np
 from finta import TA
 from sklearn.cluster import KMeans
-from helpers.class_helpers import Helpers
 from scipy.signal import argrelextrema
 
 class Trend:
@@ -14,10 +13,6 @@ class Trend:
     Neutral = 2
 
 class BotIndicators():
-    def __init__(self, bot_obj):
-        Helpers.__init__(self, name="BotIndicators", bot_obj=bot_obj)
-        self.bot_obj = bot_obj
-
     def scalping_strategy_result(
         self, data: pd.DataFrame, stop_loss_percent=0.99, take_profit_percent=1.015
     ) -> str:
